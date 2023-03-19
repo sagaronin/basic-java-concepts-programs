@@ -17,12 +17,11 @@ public class CheckExceptionPropogation {
     public static void main(String[] args) {
         UncheckedExceptionPropogation ep= new UncheckedExceptionPropogation();
         try {
-            //Note: By default, Checked Exceptions are not forwarded in calling chain (propagated).
+            //Note: "By default", Checked Exceptions are not forwarded in calling chain (propagated).
             ep.third();
         } catch (Exception e) {
             System.out.println("inside catch");
-            System.out.println(e);
+            System.out.println(e);  
         }
     }
-    
 }
